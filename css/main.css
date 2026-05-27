@@ -63,12 +63,17 @@ article h2 {
   margin: 0;
 }
 
+article p {
+  margin: 0;
+  color: var(--fg2);
+}
+
 article:not(:last-of-type) {
   border-bottom: solid 1px var(--fg2);
 }
 
 .metadata {
-  margin: 0 0 1em 0;
+  margin: 0;
 }
 
 .tags {
@@ -83,6 +88,12 @@ article:not(:last-of-type) {
 .tags a {
   color: var(--fg2);
   text-decoration: none;
+}
+
+h1 a svg {
+  height: 35px;
+  width: auto;
+  vertical-align: sub;
 }
 
 :is(h1, h2, h3, h4, h5, h6) .anchor {
