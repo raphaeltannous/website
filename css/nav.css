@@ -47,6 +47,12 @@
   text-decoration: none;
 }
 
+.navbar ul a svg {
+  height: 10px;
+  width: auto;
+  vertical-align: super;
+}
+
 @media screen and (max-width: 600px) {
   .navbar label[for="dropdown"] {
     display: block;
