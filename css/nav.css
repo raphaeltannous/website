@@ -1,0 +1,75 @@
+/* @import url("vars.css"); */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: inherit;
+}
+
+.navbar p {
+  font-weight: bold;
+}
+
+.navbar input[type="checkbox"],
+.navbar label[for="dropdown"] {
+  margin-left: auto;
+  display: none;
+}
+
+.navbar label[for="dropdown"] svg {
+  display: block;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0 -1em 0 auto;
+  padding: 0;
+  background: inherit;
+  text-align: center;
+}
+
+.navbar ul a {
+  display: block;
+  padding: 1em;
+  color: inherit;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar ul a.active {
+  border-bottom: solid 2px var(--link) !important;
+}
+
+.navbar ul a:hover {
+  background-color: var(--bg3);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar label[for="dropdown"] {
+    display: block;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .navbar ul a.active {
+    border: none !important;
+    background-color: var(--bg3);
+  }
+
+  .navbar ul a {
+    padding: 1em 2em;
+  }
+
+  .navbar:has(input[type="checkbox"]:checked) ul {
+    display: none;
+  }
+}
