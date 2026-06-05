@@ -68,10 +68,6 @@ article p {
   color: var(--fg2);
 }
 
-article:not(:last-of-type) {
-  border-bottom: solid 1px var(--fg2);
-}
-
 .metadata {
   margin: 0;
 }
