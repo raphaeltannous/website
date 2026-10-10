@@ -201,8 +201,7 @@ figcaption {
 }
 
 .repo div,
-.repo h4,
-.repo p {
+.repo h4 {
   overflow: hidden;
 }
 
@@ -210,8 +209,7 @@ figcaption {
   flex: 1;
 }
 
-.repo h4,
-.repo p {
+.repo h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
