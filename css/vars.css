@@ -8,3 +8,17 @@
   --fg1: light-dark(#1f1f1f, #fafafa);
   --link: light-dark(#edaa00, #edaa00);
 }
+
+img.img-dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  img.img-dark {
+    display: block;
+  }
+
+  img.img-light {
+    display: none;
+  }
+}
